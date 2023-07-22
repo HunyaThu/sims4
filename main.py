@@ -34,11 +34,11 @@ text = text_color + text_music + text_says + text_theme + text_fashion + text_ho
 @bot.message_handler(commands=['start'])
 def get_text_messages(message):
     text_color = rand.get_color(11)
-    text_music = rand.get_music(35)
+    text_music = rand.get_music(38)
     text_says = rand.get_says(18)
     text_theme = rand.get_theme(18)
     text_fashion = rand.get_fashion(9)
-    text_hobby = rand.get_hobby(33)
+    text_hobby = rand.get_hobby(35)
     text_decor = rand.get_decor(21)
     text = text_color + text_music + text_says + text_theme + text_fashion + text_hobby + text_decor
     bot.send_message(message.chat.id, text)
