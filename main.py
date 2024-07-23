@@ -38,7 +38,7 @@ def get_text_messages(message):
     text_says = rand.get_says(18)
     text_theme = rand.get_theme(18)
     text_fashion = rand.get_fashion(9)
-    text_hobby = rand.get_hobby(35)
+    text_hobby = rand.get_hobby(36)
     text_decor = rand.get_decor(21)
     text = text_color + text_music + text_says + text_theme + text_fashion + text_hobby + text_decor
     bot.send_message(message.chat.id, text)
